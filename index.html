@@ -3,39 +3,68 @@
 
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <title> Glassy profile </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title> Members shares </title>
 </head>
 
-<body class="bg-gray-400">
-      <main>
-        <div class="bg-blue-950 h-[360px] w-[200px] rounded-md mt-[135px] mx-auto content-center">
-             <div class="bg-gradient-to-bl from-blue-200 from-10% via-white via-30% to-green-200 to-90%  w-[300px] h-[300px] relative right-[50px] rounded-[1.2rem] top-[29px]">
-                   <span class="left-[235px] mt-[20px] top-[23px] relative">
-                    <div class="h-[4px] w-[26px] bg-blue-900  mb-[10px]  "></div>
-                    <div class="h-[4px] w-[26px] bg-blue-900 "></div>
-                   </span>
-                  <div class=" top-[25px] relative">
-                   <img src="./images/avatar.png" class="w-[65px] h-[65px] mx-auto" alt="">
+<body class="">
+  <main class="w-[600px] h-[400px] rounded-lg relative top-[125px] mx-auto">
+    <div class="flex w-[500px] justify-between pt-[24px] mx-auto">
+      <i class="fa-solid fa-arrow-left text-[27px] p-[6px] px-[8px] icon rounded-full  bg-white"></i>
+      <button class="pt-4 text-white ">settings <i
+          class="fa-solid fa-gear relative top-[2px] pl-2  text-[20px]"></i></button>
+    </div>
+    <h2 class="pl-[50px] pt-[22px] pb-[25px] text-white text-[25px] w-[250px]">Share with people and groups</h2>
+    <div class="border-[1px] flex  w-[500px] mx-auto input h-[54px] rounded-full border-gray-500">
+      <div
+        class="h-[40px] flex mt-[5px] ml-[8px] py-[1px] pick bg-gray-400 w-[140px] border-[1px] rounded-full border-gray-500 ">
+        <img src="./images/avatar.png" class="h-[32px] w-[32px] ml-[3px] mt-[2px]" alt="">
+        <h3 class="text-[13px] text-white font-bold pt-[8px] pl-[6px]">Emma james</h3>
+      </div>
+      <div
+        class="h-[40px] flex mt-[5px] ml-[8px] py-[1px] pick bg-gray-400 w-[140px] border-[1px] rounded-full border-gray-500 ">
+        <img src="./images/avatar.png" class="h-[32px] w-[32px] ml-[3px] mt-[2px]" alt="">
+        <h3 class="text-[13px] text-white font-bold pt-[8px] pl-[6px]">Jim fanges</h3>
+      </div>
+    </div>
+    <div class="pl-[50px] pt-[25px] flex gap-[10px]">
+      <input type="checkbox" name="" id="" class="w-[18px] bg-black h-[18px]">  <h2 class="relative bottom-[3px]">Notify me</h2>
+    </div>
+    <div class="flex w-[500px] mx-auto relative top-[32px] justify-between">
+      <button class="text-blue-400 font-bold">Send feedback</button>
 
-                   <h2 class="font-bold text-[23px] text-blue-950 text-center pt-[15px] ">Daniel joffrion</h2>
-                   <p class="text-center text-gray-700 pt-[8px] pb-[10px] "><i class="fa-solid fa-location-dot"></i> Atlanta , GA.</p>
-                   <button class= "content-center ml-[95px] mt-[30px] rounded-full text-[15px] text-white bg-blue-900 py-[6px] px-[8px] font-bold">view content</button>
-                </div>
-             </div>
-
-             
-        </div>
-      </main>
+      <div>
+        <button class="px-[25px] py-[13px] rounded-md font-bold text-white input ">Cancle</button>
+        <button class="px-[25px] py-[13px] bg-blue-400 rounded-md font-bold text-white">Send</button>
+      </div>
+    </div>
+  </main>
 </body>
 
 <style>
+  body {
+    background-color: rgb(70, 63, 112);
+  }
 
-   
+  main {
+    background-color: rgb(84, 72, 151);
+  }
+
+  .input {
+    background-color: rgb(70, 63, 112);
+  }
+
+  .pick {
+    background-color: rgb(84, 72, 151);
+  }
+  .icon {
+      color: rgb(70, 63, 112);
+  }
 </style>
+
 </html>
