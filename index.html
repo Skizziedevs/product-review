@@ -9,61 +9,75 @@
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <title> Members shares </title>
+  <title> Product review </title>
 </head>
 
-<body class="">
-  <main class="w-[600px] h-[400px] rounded-lg relative top-[125px] mx-auto">
-    <div class="flex w-[500px] justify-between pt-[24px] mx-auto">
-      <i class="fa-solid fa-arrow-left text-[27px] p-[6px] px-[8px] icon rounded-full  bg-white"></i>
-      <button class="pt-4 text-white ">settings <i
-          class="fa-solid fa-gear relative top-[2px] pl-2  text-[20px]"></i></button>
-    </div>
-    <h2 class="pl-[50px] pt-[22px] pb-[25px] text-white text-[25px] w-[250px]">Share with people and groups</h2>
-    <div class="border-[1px] flex  w-[500px] mx-auto input h-[54px] rounded-full border-gray-500">
-      <div
-        class="h-[40px] flex mt-[5px] ml-[8px] py-[1px] pick bg-gray-400 w-[140px] border-[1px] rounded-full border-gray-500 ">
-        <img src="./images/Avatar.png" class="h-[32px] w-[32px] ml-[3px] mt-[2px]" alt="">
-        <h3 class="text-[13px] text-white font-bold pt-[8px] pl-[6px]">Emma james</h3>
-      </div>
-      <div
-        class="h-[40px] flex mt-[5px] ml-[8px] py-[1px] pick bg-gray-400 w-[140px] border-[1px] rounded-full border-gray-500 ">
-        <img src="./images/Avatar2.png" class="h-[32px] w-[32px] ml-[3px] mt-[2px]" alt="">
-        <h3 class="text-[13px] text-white font-bold pt-[8px] pl-[6px]">Jim fanges</h3>
-      </div>
-    </div>
-    <div class="pl-[50px] pt-[25px] flex gap-[10px]">
-      <input type="checkbox" name="" id="" class="w-[18px] bg-black h-[18px]">  <h2 class="relative bottom-[3px]">Notify me</h2>
-    </div>
-    <div class="flex w-[500px] mx-auto relative top-[32px] justify-between">
-      <button class="text-blue-400 font-bold">Send feedback</button>
+<body class="bg-gray-200">
 
-      <div>
-        <button class="px-[25px] py-[13px] rounded-md font-bold text-white input ">Cancle</button>
-        <button class="px-[25px] py-[13px] bg-blue-400 rounded-md font-bold text-white">Send</button>
+  <div class="w-[650px] h-[450px] relative top-[70px] mx-auto rounded-[2rem] bg-red-300">
+    <div class="w-[520px] mx-auto h-[630px] px-[35px] relative rounded-[1.5rem] bottom-[78px] bg-white">
+      <h2 class="font-bold pt-[40px] text-[20px]">Overall Rating</h2>
+      <div class="pt-[8px]">
+        <span class="fa fa-star checked text-[17px] rounded-md p-1 border-[1px] border-gray-400 "></span>
+        <span class="fa fa-star checked text-[17px] rounded-md p-1 border-[1px] border-gray-400 "></span>
+        <span class="fa fa-star checked text-[17px] rounded-md p-1 border-[1px] border-gray-400 "></span>
+        <span class="fa fa-star checked text-[17px] rounded-md p-1 border-[1px] border-gray-400 "></span>
+        <span class="fa fa-star  text-[17px] p-1 rounded-md border-[1px] border-gray-400 "></span>
+      </div>
+      <p class="text-sm pt-[4px] text-gray-800">Click to rate</p>
+
+      <div class="pt-[9px]">
+        <label for="review-title" class="text-[0.8rem] font-bold ">Review title</label>
+        <input type="text" placeholder="Example: Easy to use."
+          class="w-full border-[1px] pl-[15px] border-gray-400 h-[35px]  mt-[5px] rounded-md">
+      </div>
+      <div class="pt-[10px]">
+        <span class="text-[14px] font-[600] ">Would you recommend this product to a friend?</span>
+        <div class="flex pt-[8px]">
+          <input type="radio" id="yes" name="recommend" value="yes">
+            <label for="html">Yes</label>
+            <input type="radio" id="no" name="recommend" class="ml-[35px]" value="no">
+            <label for="css">No</label>
+        </div>
+        <div class="pt-[8px]">
+          <label for="review-title" class="text-[0.8rem] font-bold ">Product review</label>
+          <textarea name="review-text" id="review-text"
+            class="w-full h-[50px] border-[1px] border-gray-300 text-gray-400" placeholder="">
+          Example: Since i bought this a month ago, its been used alot. what i like best/worst about this product ... 
+         </textarea>
+        </div>
+        <div class="flex pt-[12px] pb-[7px]">
+           <div>
+            <p class="text-[0.8rem] font-bold ">Nickname</p>
+        <input type="text" placeholder="Example: bob27"
+          class="w-[95%] border-[1px] pl-[15px] border-gray-400 h-[34px]  mt-[5px] rounded-md">
+           </div>
+           <div>
+            <p class="text-[0.8rem] font-bold ">Nickname</p>
+        <input type="text" placeholder="Example: bob27"
+          class="w-[95%] border-[1px] pl-[15px] border-gray-400 h-[34px]  mt-[5px] rounded-md">
+           </div>
+           
+        </div>
+
+        <div class=" pt-[13px] flex gap-[10px]">
+          <input type="checkbox" name="" id="" class="w-[18px] bg-black h-[18px]">
+          <h3 class="relative bottom-[3px] font-bold">I accept the <a href="#" class="underline"> terms and conditions</a> </h2>
+        </div>
+        <footer class="pt-[13px]">
+          <p class="text-sm font-bold">You will be able to recieve emails in connection with this review.(eg if others comment on it). All emails contain the option to unsubscribe. We can use text and star rating in other marketing.</p>
+          <button class="px-[14px] mt-[20px] rounded-md text-white font-bold text-md py-[10px] bg-blue-950">Submit product review</button>
+        </footer>
       </div>
     </div>
-  </main>
+  </div>
+
+
 </body>
 
 <style>
-  body {
-    background-color: rgb(70, 63, 112);
-  }
-
-  main {
-    background-color: rgb(84, 72, 151);
-  }
-
-  .input {
-    background-color: rgb(70, 63, 112);
-  }
-
-  .pick {
-    background-color: rgb(84, 72, 151);
-  }
-  .icon {
-      color: rgb(70, 63, 112);
+  .checked {
+    color: orange;
   }
 </style>
 
